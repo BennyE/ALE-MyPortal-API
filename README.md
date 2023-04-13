@@ -5,8 +5,13 @@ You'll need a username/password specifically enabled for MyPortal API access, co
 
 ## Usage (-h)
 
+- Clone the repository `git clone https://github.com/BennyE/ALE-MyPortal-API.git`
+- In that directory `python3 -m pip install -r requirements.txt`
+- Rename `mysecrets-template.py` to `mysecrets.py` and update the file with your username/password for MyPortal API
+- Run as shown below
+
 ```
-$ % python3 ale-myportal-api.py -h                                                                             
+$ python3 ale-myportal-api.py -h                                                                             
 Alcatel-Lucent Enterprise MyPortal API helper by Benny Eggerstedt (2023)
 usage: ale-myportal-api.py [-h] [-a ASSETS] [-p PRODUCTS] [-k] [-u URL]
 
@@ -23,7 +28,7 @@ options:
 ## Example
 
 ```
-$ % python3 ale-myportal-api.py -a EXAMPLE-SN1 -p OS6860N-P48M-EU,OS6465-P6-EU
+$ python3 ale-myportal-api.py -a EXAMPLE-SN1 -p OS6860N-P48M-EU,OS6465-P6-EU
 Alcatel-Lucent Enterprise MyPortal API helper by Benny Eggerstedt (2023)
 Using MyPortal API URL: https://integration.al-enterprise.com
 Performing products query for: OS6860N-P48M-EU,OS6465-P6-EU
